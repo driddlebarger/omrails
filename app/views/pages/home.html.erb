@@ -3,28 +3,28 @@
         <% if user_signed_in? %>
             <h1>Welcome back!</h1>
         <% else %>
-            <h1>Welcome to my website!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <%= link_to "Learn more »", "#", class: "btn btn-primary btn-lg" %> 
+            <h1>Welcome to my One Month Rails website!</h1>
+            <p>This is my ongoing website for the One Month Rails class. So far we have completed 3 of the 4 weeks. Check back again for more updates!</p>
+            <%= link_to "Learn more »", "/about", class: "btn btn-primary btn-lg" %> 
         <% end %>
     </div>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+            <h2>Admin</h2>
+            <p>In week 3 we started by making an Admin section using the ActiveAdmin Gem. </p>
+            <p><%= link_to "View details", "/admin", class: "btn btn-secondary" %></p>
         </div>
         <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+            <h2>Tweets</h2>
+            <p>Then, we used Scaffolding to create a resource called Tweets. We associated the Tweets with our users, then used methods from Devise to authenticate users (force people to log in, etc.)</p>
+            <p><%= link_to "View details", "/tweets", class: "btn btn-secondary" %></p>
         </div>
         <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+            <h2>Posts</h2>
+            <p>Finally, for our HW assignment we were asked to create another resource. I created "Posts" which is basically a mini blog. I hope to add ability to upload photos next week to make it a mix of Instagram and a blog.</p>
+            <p><%= link_to "View details", "/posts", class: "btn btn-secondary" %></p>
         </div>
     </div>
 </div>

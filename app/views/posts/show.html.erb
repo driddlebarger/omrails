@@ -1,0 +1,27 @@
+<div class="container">
+	<p id="notice"><%= notice %></p>
+
+	<p class="text-right">
+	  <%= @post.user.email %>
+	</p>
+
+	<p>
+		<h3>
+	  	<%= @post.title %>
+	  	</h3>
+	</p>
+
+	<p>
+	  <%= @post.body %>
+	</p>
+
+	<p>
+	  <strong>Link for more reading:</strong>
+	  <%= @post.url %>
+	</p>
+
+	<% if @post.user == current_user %>
+		<%= link_to 'Edit', edit_post_path(@post) %> |
+	<% end %>
+	<%= link_to 'Back', posts_path %>
+</div>
