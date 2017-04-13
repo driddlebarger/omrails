@@ -36,10 +36,12 @@
 
   <% @posts.each do |post| %>
 
-    <div class="card">
-      <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+    <div class="card"> 
       <div class="card-block">
         <p class="text-right"><%= post.user.email %></p>
+        <% if post.image.exists? %>
+           <p> <%= image_tag post.image, style: "width: 500px;", class: "img-fluid" %> </p> 
+        <% end %>
         <h4 class="card-title"><%= post.title %></h4>
         <p class="card-text"><%= post.body %></p>
         <%= link_to 'Read More', post, class: "btn btn-primary" %>

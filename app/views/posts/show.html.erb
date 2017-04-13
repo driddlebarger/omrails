@@ -11,13 +11,17 @@
 	  	</h3>
 	</p>
 
+	<% if @post.image.exists? %>
+	    <p> <%= image_tag @post.image, style: "width: 500px;", class: "img-fluid" %> </p> 
+	<% end %>
+
 	<p>
 	  <%= @post.body %>
 	</p>
 
 	<p>
 	  <strong>Link for more reading:</strong>
-	  <%= @post.url %>
+	  <%= link_to @post.url %> 
 	</p>
 
 	<% if @post.user == current_user %>

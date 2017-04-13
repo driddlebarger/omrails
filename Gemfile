@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', '~> 1.7'
+gem 'paperclip', '~> 5.0.0'
 
 
 # Use Capistrano for deployment
